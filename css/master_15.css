@@ -1,0 +1,211 @@
+:root {
+    --color: white;
+    --margin: 20px auto;
+    --text-transform: capitalize;
+    --font-size: 40px;
+    --font-weight: bold;
+    --font-family: Arial, Helvetica, sans-serif;
+    --padding: 10px;
+    --text-align: center;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.one {
+    width: 150px;
+    margin: var(--margin);
+    background-color: #ff5722;
+    color: var(--color);
+    text-transform: var(--text-transform);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    font-family: var(--font-family);
+    padding: var(--padding);
+    text-align: var(--text-align);
+    position: relative;
+}
+
+.one::before,
+.one::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ff5722;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.one::before {
+    transform: skew(10deg, 10deg);
+    -webkit-transform: skew(10deg, 10deg);
+    -moz-transform: skew(10deg, 10deg);
+    -ms-transform: skew(10deg, 10deg);
+    -o-transform: skew(10deg, 10deg);
+}
+
+.one::after {
+    transform: skew(-10deg, -10deg);
+    -webkit-transform: skew(-10deg, -10deg);
+    -moz-transform: skew(-10deg, -10deg);
+    -ms-transform: skew(-10deg, -10deg);
+    -o-transform: skew(-10deg, -10deg);
+}
+
+.two {
+    width: 150px;
+    margin: var(--margin);
+    color: var(--color);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    font-family: var(--font-family);
+    text-align: var(--text-align);
+    text-transform: var(--text-transform);
+    padding: var(--padding);
+    background-color: #009688;
+    position: relative;
+}
+
+.two::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -15px;
+    transform: skew(20deg);
+    background-color: #009688;
+    z-index: -1;
+    -webkit-transform: skew(20deg);
+}
+
+.two::after {
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    top: 0;
+    left: -45px;
+    background-color: #009688;
+    transform: skew(20deg);
+}
+
+/* .class {
+    matrix(3, 0.2679, 0, 3, 20, 100);
+
+    scaleX => 3
+    skewY => 0.2679
+    skewX => 0
+    scaleY => 3
+    translateX => 20
+    translateY => 100
+  } */
+
+.three {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: #607d8b;
+    border-bottom: 5px solid black;
+    margin: var(--margin);
+    display: flex;
+    align-items: flex-end;
+}
+
+.three::before {
+    content: "";
+    position: absolute;
+    width: 69%;
+    height: 69%;
+    background-color: black;
+    top: -69px;
+    left: 29px;
+    transform: rotate(44.5deg);
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.three::after {
+    content: "ahmed";
+    position: absolute;
+    color: var(--color);
+    font-size: 20;
+    font-weight: var(--font-weight);
+    font-family: var(--font-family);
+    text-transform: var(--text-transform);
+    padding: var(--padding);
+}
+
+.box {
+    perspective: 800px;
+}
+
+.four,
+.five {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+    margin: var(--margin);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    color: var(--color);
+    text-transform: var(--text-transform);
+}
+
+.four::before,
+.five::before {
+    content: "front";
+    position: absolute;
+    background-color: #fa3664;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.four::after {
+    content: "back";
+    position: absolute;
+    background-color: #1692fc;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.four:hover {
+    transform: rotateY(180deg);
+}
+
+.five::after {
+    content: "back";
+    position: absolute;
+    background-color: #1692fc;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+}
+
+.five:hover {
+    transform: rotateX(180deg);
+}

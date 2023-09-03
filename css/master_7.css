@@ -1,0 +1,147 @@
+/* div {
+    position: absolute;
+}
+
+.one {
+    width: 100px;
+    height: 100px;
+    background-color: #0000fb9a;
+    top: 20px;
+    left: 20px;
+}
+
+.two {
+    width: 100px;
+    height: 100px;
+    background-color: #008000d1;
+    top: 30px;
+    left: 30px;
+}
+
+.three {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000b2;
+    top: 40px;
+    left: 40px;
+} */
+/* span {
+    position: absolute;
+}
+
+div {
+    width: 400px;
+    border: 1px solid;
+    border-top-color: red;
+    border-right-color: blue;
+    border-bottom-color: red;
+    border-left-color: blue;
+}
+
+.top-left {
+    top: -2px;
+    width: 15px;
+}
+
+.bottom-left {
+    width: 15px;
+    bottom: 189px;
+}
+
+.top-right {
+    width: 15px;
+    top: -2px;
+    right: 1px;
+}
+
+.bottom-right {
+
+    left: 400px;
+    bottom: 189px;
+
+}
+
+.top-left,
+.bottom-left,
+.top-right,
+.bottom-right {
+    background-color: blue;
+    color: white;
+    width: 15px;
+    text-align: center;
+} */
+
+ul {
+    list-style-type: none;
+    width: 400px;
+}
+
+ul li {
+    margin: 0;
+    background-color: white;
+    border: 2px solid #eaeaea;
+    padding: 0;
+}
+
+
+.u1 {
+    list-style-type: circle;
+}
+
+.l1 {
+
+    background-color: #eaeaea;
+    margin-bottom: 10px;
+
+}
+
+.l2 {
+
+    background-color: #eaeaea;
+    margin-bottom: 10px;
+
+}
+
+.l3 {
+
+    background-color: #eaeaea;
+    margin-bottom: 10px;
+
+}
+
+.ll {
+    width: 352px;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 700px;
+    text-transform: capitalize;
+    background-color: #eaeaea;
+    border-spacing: 0;
+    text-align: center;
+}
+
+table td {
+    border: 1px solid white;
+}
+
+table thead td {
+    background-color: #000000cd;
+    color: white;
+    font-weight: bold;
+}
+
+table tbody td .view {
+    background-color: #0000ff9c;
+    color: white;
+}
+
+table tbody td .delete {
+    background-color: #ff0000b5;
+    color: white;
+}

@@ -1,0 +1,33 @@
+div .child .title {
+    color: red;
+}
+
+div .title {
+    color: blue;
+}
+
+div p,
+.title {
+    color: green;
+}
+
+.w {
+    padding: 5px;
+    margin: 5px 10px;
+    color: white;
+    background-color: brown;
+    width: fit-content;
+    max-width: 400px;
+    max-height: 100px;
+    overflow-y: hidden;
+    /* overflow-y: auto; */
+    /* overflow-y: scroll; */
+}
+
+/* div p {
+    color: green;
+}
+
+.title {
+    color: green;
+} */

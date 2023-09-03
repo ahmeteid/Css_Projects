@@ -1,0 +1,59 @@
+.dv1 {
+    border: 5px solid red;
+    outline-width: 5px;
+    outline-style: solid;
+    outline-color: black;
+    display: inline-block;
+    margin: 10px;
+}
+
+.dv2 {
+    border-width: 5px;
+    border-color: blue green;
+    border-style: solid;
+    outline-width: 5px;
+    outline-color: black;
+    outline-style: solid;
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+}
+
+.dv3 {
+    border-width: 5px;
+    border-top-color: red;
+    border-right-color: green;
+    border-bottom-color: blue;
+    border-left-color: yellow;
+    border-style: dashed;
+    outline: 5px solid black;
+    display: inline-block;
+    margin: 5px;
+}
+
+.p1 {
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    border-left: 5px solid red;
+    background-color: antiquewhite;
+    display: block;
+}
+
+.p2 {
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    border-left: 5px solid yellow;
+    background-color: antiquewhite;
+    display: block;
+    visibility: hidden;
+}
+
+.p3 {
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    border-left: 5px solid green;
+    background-color: antiquewhite;
+    display: block;
+}

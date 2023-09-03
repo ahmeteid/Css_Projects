@@ -1,0 +1,69 @@
+.inh1 {
+    padding: 10px;
+    border: 5px solid red;
+    margin: 50px;
+    text-align: center;
+}
+
+.inh1 p {
+    padding: inherit;
+    border: inherit;
+
+}
+
+.inh2 {
+    padding: 10px;
+    border: 5px solid green;
+    margin: 50px;
+    text-align: center;
+}
+
+.inh2 p {
+    padding: inherit;
+    border: inherit;
+}
+
+div {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+div .p1 {
+    text-align: inherit;
+    text-transform: inherit;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div .p2 {
+    text-align: inherit;
+    text-transform: inherit;
+    font-family: 'Cairo', sans-serif;
+}
+
+div .p3 {
+    text-align: inherit;
+    text-transform: inherit;
+    font-family: 'Jomhuria', cursive;
+}
+
+html {
+    font: 20px;
+}
+
+div .p4 {
+    text-align: inherit;
+    text-transform: inherit;
+    font-size: 2.5rem;
+}
+
+div .p5 {
+    text-align: inherit;
+    text-transform: inherit;
+    font-size: 2rem;
+}
+
+div .p6 {
+    text-align: inherit;
+    text-transform: inherit;
+    font-size: 1.5rem;
+}

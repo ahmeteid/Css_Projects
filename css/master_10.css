@@ -1,0 +1,66 @@
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+    --mainMargin: 10px;
+}
+
+div {
+    border: 2px solid var(--mainColor, black);
+    padding: var(--mainPadding, 10px);
+    color: var(--mainColor, red);
+    margin: var(--mainMargin, 10px);
+}
+
+.d2 {
+    width: 400px;
+    background-color: #eee !important;
+    color: black !important;
+    border: none !important;
+    font-size: 20px !important;
+    font-weight: bold;
+    position: relative;
+    text-indent: -3000px;
+}
+
+.d2::after {
+    content: "elzero";
+    text-indent: 0;
+    position: absolute;
+    left: 50%;
+    text-transform: capitalize;
+}
+
+.parent {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    background-color: #eee;
+    color: black;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: capitalize;
+    transition-duration: .5s;
+    transition-delay: 0;
+    transition-timing-function: ease;
+    font-weight: bold;
+    border: none;
+}
+
+.parent:hover {
+    margin-top: 30px;
+}
+
+.child {
+    background-color: #ccc;
+    color: black;
+    padding: 20px;
+    transition-duration: 1s;
+    transition-delay: .5s;
+    transition-timing-function: linear;
+    font-weight: bold;
+    border: none;
+}
+
+.parent:hover .child {
+    margin-top: 30px;
+}

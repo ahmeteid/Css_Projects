@@ -1,0 +1,230 @@
+.parent {
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.parent div {
+    background-color: #f44336;
+    height: 30px;
+    flex: 0 190px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.el {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #eee;
+    color: #ff5722;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 50%;
+    box-shadow: 5px 0px 0 0px #ff5722, -6px 0px 0 0px #03a9f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.par {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-content: space-between; */
+}
+
+.par div {
+    background-color: #607d8b;
+    flex: 0 190px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.par .one,
+.par .three {
+    height: 30px;
+}
+
+.par .one {
+    order: 6;
+    align-self: self-end;
+}
+
+.par .two {
+    order: 5;
+}
+
+.par .three {
+    order: 2;
+}
+
+.par .four {
+    order: 3;
+}
+
+.par .five {
+    order: 4;
+}
+
+.par .six {
+    order: 1;
+}
+
+.pa {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.pa div {
+    background-color: #009688;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pa .one,
+.pa .three {
+    height: 30%;
+    width: 5%;
+    margin-right: 10px;
+    align-self: flex-end;
+}
+
+.pa .two {
+    width: 50%;
+    height: 30%;
+    margin-left: 10px;
+}
+
+
+.pp {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    display: flex;
+}
+
+.pp div {
+    height: 50%;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    margin: 10px;
+}
+
+.pp .one {
+    background-color: #ff9800;
+    order: 2;
+}
+
+.pp .two {
+    background-color: #8bc34a;
+    order: 3;
+    align-self: flex-end;
+}
+
+.pp .three {
+    background-color: #795548;
+    order: 4;
+}
+
+.pp .four {
+    background-color: #673ab7;
+    order: 1;
+    align-self: flex-end;
+}
+
+:root {
+    --background-color: #ddd;
+    --margin: 10px;
+    --padding: 10px;
+}
+
+.page {
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    /* width: 1000px;
+    margin: 50px auto; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo,
+.links {
+    background-color: var(--background-color);
+    padding: var(--padding);
+    margin: var(--margin);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    list-style: none;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.links li {
+    padding: 10px;
+}
+
+.main-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content,
+.sidebar {
+    background-color: var(--background-color);
+    padding: var(--padding);
+    margin: var(--margin);
+    width: calc(100% / 5);
+    height: 400px;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.footer {
+    background-color: var(--background-color);
+    padding: var(--padding);
+    margin: var(--margin);
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,53 @@
+.dz1 {
+    background-color: antiquewhite;
+    text-shadow: 1px 0px 0px #ff0000, 0px 1px 0px #3700ebd9, 1px 1px 0px #e946c3d9;
+}
+
+.one {
+    text-transform: uppercase;
+}
+
+.two {
+    text-transform: capitalize;
+}
+
+.three {
+    text-transform: lowercase;
+}
+
+.dz2 {
+    background-color: antiquewhite;
+    width: 400px;
+    padding: 10px;
+
+}
+
+.dz3 {
+    background-color: antiquewhite;
+    width: 400px;
+    overflow: hidden;
+    padding: 10px;
+    white-space: nowrap;
+
+}
+
+.dz4 {
+    background-color: antiquewhite;
+    width: 400px;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.li {
+    padding: 10px;
+    margin: 0 0 0 10px;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+    background-color: #1f8664;
+    color: white;
+    border-bottom: 5px solid #272424;
+}

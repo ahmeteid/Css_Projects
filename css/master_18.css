@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.assign-one {
+    color: white;
+    background-color: red;
+    margin: 50px auto;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media print {
+    .assign-one {
+        font-size: 40px;
+    }
+}
+
+.parent1,
+.parent2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.parent1>div,
+.parent2>div {
+    background-color: #eeeeee;
+    padding: 5px 10px;
+    width: 200px;
+    margin-bottom: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid #ccc;
+}
+
+.parent1 div h3,
+.parent2 div h3 {
+    color: #1a9f93;
+}
+
+/* Small Screens */
+
+@media (max-width: 667px) {
+
+    .parent1 div,
+    .parent2 div {
+        width: calc(100% - 10px);
+    }
+
+    .parent1 div h3,
+    .parent2 div h3 {
+        color: black;
+    }
+
+}
+
+
+/* Medium Screen */
+@media (min-width: 668px) and (max-width: 1199px) {
+    .parent1 div {
+        width: calc(50% - 10px);
+    }
+
+    .parent1 div h3,
+    .parent2 div h3 {
+        color: #fe0e0e;
+    }
+
+    .parent2 .one {
+        width: calc(100% - 10px);
+    }
+
+    .parent2 .two,
+    .parent2 .three,
+    .parent2 .four {
+        width: calc(33.3% - 10px);
+    }
+}
+
+/* Large Screen */
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .parent1 div {
+        width: calc(25% - 10px);
+    }
+
+    .parent1 div h3,
+    .parent2 div h3 {
+        color: #1a9f93;
+    }
+
+    .parent2 .one,
+    .parent2 .four {
+        width: calc(100% - 10px);
+    }
+
+    .parent2 .two,
+    .parent2 .three {
+        width: calc(50% - 10px);
+    }
+}

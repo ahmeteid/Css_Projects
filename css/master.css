@@ -1,0 +1,47 @@
+.one,
+.two,
+.three,
+p {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #EEE;
+}
+
+.one {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.two {
+    color: green;
+    border-bottom: 2px solid green;
+}
+
+.three {
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+
+/* div {
+    width: 500px;
+    background-color: blueviolet;
+    background-image: url(../imgs/back_ground.png);
+    background-attachment: fixed; */
+/* background-attachment: scroll; */
+/* background-position: left top; */
+/* background-size: auto; */
+/* background-size: cover; */
+/* background-size: contain; */
+/* background-repeat: repeat; */
+/* background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    border-width: 10px;
+    border-color: black;
+    border-right-color: green;
+    border-left-color: blue;
+    border-top-color: red;
+    border-style: solid dashed double dotted;
+
+/* } */

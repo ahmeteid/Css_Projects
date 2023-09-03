@@ -1,0 +1,65 @@
+/* 
+NOTE:
+contante width is : 100%
+4 space 15px * 4 => 60px from content width
+100% Available space
+3 elements the width is : (100% - 60px) / 3
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+div {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #808080;
+    float: left;
+    width: 1000px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+
+}
+
+.dt1 {
+    width: calc((100% -15px) / 1);
+
+}
+
+.dt2 {
+    width: calc((100% - 60px) / 3);
+}
+
+.dt3 {
+    width: calc((100% - 45px) / 2);
+}
+
+.dt4 {
+    width: calc((100% - 75px) / 4);
+}
+
+
+
+/* div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: gray;
+
+
+}
+
+.one {
+    background-color: rgb(128 128 128 / 0.1);
+}
+
+.two {
+
+    opacity: 0.1;
+} */
